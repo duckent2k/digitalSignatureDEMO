@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Chữ ký số"
+            android:text="@string/chu_ky_so"
             android:textSize="30sp"
             android:textStyle="bold" />
 

@@ -3,7 +3,7 @@
     <string name="digital_signature">Digital Signature</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="size">Size</string>
+    <string name="size">Kích thước chuỗi</string>
     <string name="private_key">Private Key</string>
     <string name="public_key">Public Key</string>
     <string name="create_key">Create Key</string>
@@ -18,6 +18,24 @@
     <string name="toolbar">Toolbar</string>
     <string name="open">open</string>
     <string name="close">close</string>
+    <string name="chu_ky_so">Chữ ký số</string>
+    <string name="khoa_cong_khai">Khoá công khai</string>
+    <string name="p_prime_number">Số nguyên tố p</string>
+    <string name="g_alpha_number">Số alpha g</string>
+    <string name="y_number">Số y</string>
+    <string name="khoa_bi_mat">Khoá bí mật</string>
+    <string name="x_number">Số x</string>
+    <string name="tao_khoa">Tạo khoá</string>
+    <string name="black_line">-----------------------------------------------------------------------------------</string>
+    <string name="ma_hoa">Mã hoá</string>
+    <string name="ban_ro">Bản rõ</string>
+    <string name="ma_hoa_ban_ro">Mã hoá bản rõ</string>
+    <string name="giai_ma">Giải mã</string>
+    <string name="ma_hoa_ban_ro_nhan_duoc">Mã hoá bản rõ nhận được</string>
+    <string name="ban_giai_ma">Bản giải mã</string>
+    <string name="kiem_tra">Kiểm tra</string>
+    <string name="sender">Người gửi</string>
+    <string name="receiver">Người nhận" </string>
 
     <string-array name="size">
         <item>256</item>

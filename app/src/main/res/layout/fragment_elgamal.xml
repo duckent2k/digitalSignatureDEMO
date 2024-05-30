@@ -38,7 +38,7 @@
                 android:id="@+id/tv_public_key"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Khoá công khai"
+                android:text="@string/khoa_cong_khai"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Số nguyên tố p"
+                    android:text="@string/p_prime_number"
                     android:textSize="16sp" />
 
                 <TextView
@@ -88,7 +88,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Số alpha g"
+                    android:text="@string/g_alpha_number"
                     android:textSize="16sp" />
 
                 <TextView
@@ -116,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Số y"
+                    android:text="@string/y_number"
                     android:textSize="16sp" />
 
                 <TextView
@@ -134,7 +134,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Khoá bí mật"
+                android:text="@string/khoa_bi_mat"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/ll_number_y" />
@@ -154,7 +154,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Số x"
+                    android:text="@string/x_number"
                     android:textSize="16sp" />
 
                 <TextView
@@ -172,7 +172,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Tạo khoá"
+                android:text="@string/tao_khoa"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/ll_number_x" />
@@ -182,7 +182,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="-----------------------------------------------------------------------------------"
+                android:text="@string/black_line"
                 android:textColor="@color/black"
                 app:layout_constraintTop_toBottomOf="@id/btn_create_key_elgamal" />
 
@@ -191,7 +191,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Mã hoá"
+                android:text="@string/ma_hoa"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/black_line"
@@ -214,7 +214,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:gravity="center"
-                    android:text="Bản rõ"
+                    android:text="@string/ban_ro"
                     android:textSize="16sp" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -253,7 +253,7 @@
                     android:layout_marginEnd="16dp"
                     android:layout_weight="0.5"
                     android:gravity="center"
-                    android:text="Mã hoá bản rõ"
+                    android:text="@string/ma_hoa_ban_ro"
                     android:textSize="16sp" />
 
                 <TextView
@@ -272,7 +272,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Mã hoá"
+                android:text="@string/ma_hoa"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/btn_load_uri"
                 app:layout_constraintTop_toBottomOf="@id/ll_encrypted_message" />
@@ -282,7 +282,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="-----------------------------------------------------------------------------------"
+                android:text="@string/black_line"
                 android:textColor="@color/black"
                 app:layout_constraintTop_toBottomOf="@id/btn_encrypt" />
 
@@ -291,7 +291,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Giải mã"
+                android:text="@string/giai_ma"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/black_line1"
@@ -345,7 +345,7 @@
                     android:layout_marginEnd="16dp"
                     android:layout_weight="0.5"
                     android:gravity="center"
-                    android:text="Mã hoá bản rõ nhận được"
+                    android:text="@string/ma_hoa_ban_ro_nhan_duoc"
                     android:textSize="16sp" />
 
                 <TextView
@@ -375,7 +375,7 @@
                     android:layout_marginEnd="16dp"
                     android:layout_weight="0.5"
                     android:gravity="center"
-                    android:text="Bản giải mã"
+                    android:text="@string/ban_giai_ma"
                     android:textSize="16sp" />
 
                 <TextView
@@ -394,7 +394,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Giải mã"
+                android:text="@string/giai_ma"
                 app:layout_constraintEnd_toStartOf="@id/btn_check"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/ll_decrypted_message_received" />
@@ -413,7 +413,7 @@
                 android:id="@+id/btn_check"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kiểm tra"
+                android:text="@string/kiem_tra"
                 app:layout_constraintBottom_toBottomOf="@id/btn_decrypt"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/btn_decrypt"

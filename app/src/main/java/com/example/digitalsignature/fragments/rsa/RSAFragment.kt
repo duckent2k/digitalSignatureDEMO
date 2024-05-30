@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
+import com.example.digitalsignature.R
 import com.example.digitalsignature.adapter.ViewPagerAdapter
 import com.example.digitalsignature.databinding.FragmentRSABinding
 import com.google.android.material.tabs.TabLayout
@@ -30,9 +31,9 @@ class RSAFragment : Fragment() {
         adapter = ViewPagerAdapter(parentFragmentManager, lifecycle)
 
         with(binding) {
-            tabLayout.addTab(tabLayout.newTab().setText("Key"))
-            tabLayout.addTab(tabLayout.newTab().setText("Sender"))
-            tabLayout.addTab(tabLayout.newTab().setText("Receiver"))
+            tabLayout.addTab(tabLayout.newTab().setText(R.string.tao_khoa))
+            tabLayout.addTab(tabLayout.newTab().setText(R.string.sender))
+            tabLayout.addTab(tabLayout.newTab().setText(R.string.receiver))
 
             viewPager2.adapter = adapter
         }
