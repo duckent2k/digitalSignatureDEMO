@@ -8,12 +8,14 @@ class RSAAlgorithm(bigLength: Int) {
     var e: BigInteger
     val d: BigInteger
     val n: BigInteger
+    val p: BigInteger
+    val q: BigInteger
     private val random: SecureRandom = SecureRandom()
 
     init {
 //    Chọn 2 số p,q bất kì
-        val p = BigInteger.probablePrime(bigLength / 2, random)
-        val q = BigInteger.probablePrime(bigLength / 2, random)
+        p = BigInteger.probablePrime(bigLength / 2, random)
+        q = BigInteger.probablePrime(bigLength / 2, random)
 
 //    Tính n = p * q
         n = p.multiply(q)

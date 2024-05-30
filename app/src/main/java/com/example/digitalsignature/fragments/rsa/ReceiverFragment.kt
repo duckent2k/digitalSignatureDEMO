@@ -12,6 +12,7 @@ import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
+import com.example.digitalsignature.copyToClipboard
 import com.example.digitalsignature.databinding.FragmentReceiverBinding
 import com.example.digitalsignature.getFileName
 import com.example.digitalsignature.viewmodel.ReceiverViewModel
@@ -64,6 +65,10 @@ class ReceiverFragment : Fragment() {
                 receiverViewModel.filePath.value?.let {
                     receiverViewModel.decryptSignature(it)
                 }
+            }
+
+            showHashSha1.setOnClickListener{
+                copyToClipboard(requireContext(), showHashSha1.text.toString())
             }
 
             btnCheck.setOnClickListener {

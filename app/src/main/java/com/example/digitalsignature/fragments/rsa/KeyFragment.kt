@@ -9,6 +9,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
 import com.example.digitalsignature.R
+import com.example.digitalsignature.copyToClipboard
 import com.example.digitalsignature.databinding.FragmentKeyBinding
 import com.example.digitalsignature.generate.RSAAlgorithm
 import com.example.digitalsignature.getValueFromPref
@@ -61,6 +62,12 @@ class KeyFragment : Fragment() {
             btnCreateKey.setOnClickListener {
                 showPrivateKey.text = RSAAlgorithm(keySize).e.toString()
                 showPublicKey.text = RSAAlgorithm(keySize).d.toString()
+            }
+            showPrivateKey.setOnClickListener {
+                copyToClipboard(requireContext(), showPrivateKey.text.toString())
+            }
+            showPublicKey.setOnClickListener {
+                copyToClipboard(requireContext(), showPublicKey.text.toString())
             }
         }
     }
