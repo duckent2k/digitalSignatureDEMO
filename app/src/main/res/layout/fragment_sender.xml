@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sender_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".fragments.rsa.SenderFragment">
+
+    <TextView
+        android:id="@+id/input_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/input"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/input_uri"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/input_uri"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:gravity="center|start"
+        android:padding="10dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_load_uri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/input_title"
+        app:layout_constraintTop_toTopOf="@id/input_title" />
+
+    <Button
+        android:id="@+id/btn_load_uri"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_file_upload_24"
+        app:layout_constraintEnd_toEndOf="@id/input_title"
+        app:layout_constraintStart_toStartOf="@id/input_title"
+        app:layout_constraintTop_toBottomOf="@id/input_title" />
+
+    <TextView
+        android:id="@+id/hash_sha1_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mã hoá băm SHA1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/show_hash_sha1"
+        app:layout_constraintStart_toStartOf="@id/input_title"
+        app:layout_constraintTop_toBottomOf="@id/btn_load_uri" />
+
+    <TextView
+        android:id="@+id/show_hash_sha1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/created_signature_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hash_sha1_title" />
+
+    <TextView
+        android:id="@+id/created_signature_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tạo chữ ký"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/show_signature"
+        app:layout_constraintStart_toStartOf="@id/hash_sha1_title"
+        app:layout_constraintTop_toBottomOf="@id/show_hash_sha1" />
+
+    <TextView
+        android:id="@+id/show_signature"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_create_signature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/created_signature_title" />
+
+    <Button
+        android:id="@+id/btn_create_signature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tạo chữ ký"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

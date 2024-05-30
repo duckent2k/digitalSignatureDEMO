@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Digital Signature</string>
+    <string name="digital_signature">Digital Signature</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="size">Size</string>
+    <string name="private_key">Private Key</string>
+    <string name="public_key">Public Key</string>
+    <string name="create_key">Create Key</string>
+    <string name="input">Input</string>
+    <string name="hash_sha_1_input">Hash SHA-1 Input</string>
+    <string name="signature_created">Signature Created</string>
+    <string name="create_signature">Create Signature</string>
+    <string name="hello_world">Hello World</string>
+    <string name="decrypt_signature">Decrypt Signature</string>
+    <string name="rsa_algorithm">RSA Algorithm</string>
+    <string name="elgamal_algorithm">Elgamal Algorithm</string>
+    <string name="toolbar">Toolbar</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string-array name="size">
+        <item>256</item>
+        <item>512</item>
+        <item>1024</item>
+        <item>2048</item>
+        <item>3072</item>
+    </string-array>
+</resources>
