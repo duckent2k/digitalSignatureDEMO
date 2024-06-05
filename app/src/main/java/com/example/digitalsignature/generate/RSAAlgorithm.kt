@@ -28,7 +28,7 @@ class RSAAlgorithm(bigLength: Int) {
             e = BigInteger(phi.bitLength(), random) // Khoá công khai
         } while (e <= BigInteger.ONE || e >= phi || e.gcd(phi) != BigInteger.ONE)
 
-//    Tính d
+//    Tính d = e ^ -1 mod phi
         d = e.modInverse(phi) // Khoá bí mật
 
     }

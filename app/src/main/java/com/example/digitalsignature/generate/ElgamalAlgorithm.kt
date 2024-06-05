@@ -21,9 +21,11 @@ class ElgamalAlgorithm(bitLength: Int) {
 
     init {
         p = BigInteger.probablePrime(bitLength, random)
+//        g = (random mod (p-1) + 1
         g = BigInteger.probablePrime(bitLength, random).mod(p.subtract(BigInteger.ONE))
             .add(BigInteger.ONE)
         x = BigInteger(bitLength - 1, random)
+//        y = g ^ x mod p
         y = g.modPow(x, p)
 
         publicKey = PublicKey(p, g, y)
